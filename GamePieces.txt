@@ -1,0 +1,22 @@
+Rock:  This class only implements Drawable and does not do anything to interact with the player.
+
+Candy:  This class awards a point to the player if the player lands on the same square.  The Candy then disappears from the game to avoid giving the player additional points.
+
+Sawblade:  This class kills the player if the player lands on the same square.
+
+Merchant:  At a positive distance of 2 or less, the player is awarded a point, if and only if the Merchant has reached the end of the board.
+The Merchant then disappears from the board to avoid giving the player another point.
+
+ReallyLongStick:  At a positive distance that is greater than 0, but less than 2, the player gets hit.
+
+Portal:  This class advances the level if the player lands on it.  The Portal is the only way the player can win the 2nd level, even though there is a Merchant in the 2nd level.
+
+
+
+Moving Pieces:  Portal, Merchant
+
+Interacting Pieces:  Candy, Sawblade, Portal, Merchant, ReallyLongStick
+
+Only Drawable:  Rock
+
+Pieces that interact at a distance:  Merchant, ReallyLongStick
